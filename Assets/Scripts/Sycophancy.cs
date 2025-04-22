@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Sycophancy : MonoBehaviour
 {
-    [SerializeField] GameObject _GetOn;
+    [SerializeField] GameObject _getOn;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Coin")
         {
-            other.transform.SetParent(_GetOn.transform);
+            other.transform.SetParent(_getOn.transform);
         }
     }
     private void OnTriggerExit(Collider other)

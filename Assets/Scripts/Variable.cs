@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class Variable : MonoBehaviour
 {
-    [SerializeField] Text _CoinsetNam;
+    [SerializeField] Text _coinsetNam;
     public int coinSetNam = 10;
     private void Update()
     {
-        _CoinsetNam.text = "Coin:" + coinSetNam;
+        _coinsetNam.text = "Coin:" + coinSetNam;
     }
 }
