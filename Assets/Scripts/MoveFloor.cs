@@ -13,7 +13,7 @@ public class MoveFloor : MonoBehaviour
     private void Update()
     {
         float floorAddXpos= 0;
-        floorAddXpos += Mathf.Sin(Time.time);
-        _moveFloor.transform.position = new Vector3(setpos.x,setpos.y,setpos.z+floorAddXpos);   
+        floorAddXpos = Mathf.Sin(Time.time);
+        _moveFloor.transform.position = new Vector3(0,0.49f,5+(floorAddXpos*1.5f));   
     }
 }
