@@ -5,7 +5,7 @@ using UnityEngine;
 public class CoinSetiing : MonoBehaviour
 {
     [SerializeField] GameObject _coin;
-    Variable Vari;
+    public Variable Vari;
     private void Start()
     {
         for (int i = 0; i < Random.Range(15, 25); i++)
