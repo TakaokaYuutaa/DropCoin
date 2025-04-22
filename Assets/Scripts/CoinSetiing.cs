@@ -8,7 +8,7 @@ public class CoinSetiing : MonoBehaviour
     public Variable Vari;
     private void Start()
     {
-        for (int i = 0; i < Random.Range(30, 40); i++)
+        for (int i = 0; i < Random.Range(20, 15); i++)
         {
             CoinSet();
         }

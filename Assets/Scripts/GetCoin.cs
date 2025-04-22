@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GetCoin : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Variable _vari;
+    private void OnCollisionEnter(Collision collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (collision.gameObject.tag == "Coin")
+        {
+            _vari.coinSetNam += 1;
+           Destroy(collision.gameObject);
+        }
     }
 }
